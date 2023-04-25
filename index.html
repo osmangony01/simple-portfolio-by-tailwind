@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,56 @@
     <title>Portfolio site</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  
+    <header class="pt-6 px-5 sm:pt-7 sm:px-12  md:pt-8 md:px-20 lg:pt-10 lg:px-28  xl:pt-12 xl:px-36 bg-orange-50 box-border ">
+        <nav>
+            <div class="flex justify-between items-center">
+                <h2 class="text-4xl font-semibold">Ma<span class="text-orange-600">r</span>y</h2>
+                <div class="flex">
+                    <div class="hidden lg:block" id="menu">
+                        <ul class="flex text-lg items-center">
+                            <li><a class="ml-8" href="">Portfolio</a></li>
+                            <li><a class="ml-8" href="">Blog</a></li>
+                            <li><a class=" inline-block ml-8 py-3 px-7 text-white bg-orange-500 rounded" href="">Hire
+                                    me</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:hidden" id="hamburger-icon" onclick="toggleMenu()"><img src="./images/menu-bar.svg"
+                            alt="bar"></div>
+                </div>
+            </div>
+            <div class="hidden lg:hidden" id="mobile-menu">
+                <ul class="text-lg lg:hidden">
+                    <li class="my-3"><a href="">Portfolio</a></li>
+                    <hr>
+                    <li class="my-3"><a href="">Blog</a></li>
+                    <hr>
+                    <li><a class="inline-block py-3 px-7 text-white bg-orange-500 rounded my-3" href="">Hire me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 items-center">
+            <div>
+                <h3 class="text-4xl text-slate-600">Hi, I am </h3>
+                <h1 class="text-5xl my-6 font-semibold">Mary Hardy</h1>
+                <p class="text-slate-600"> Shot what able cold new see hold.Friendly as an betrayed formerly he.
+                    Morning because as to society behaved moments.</p>
+                <div class="flex items-center mt-10 flex-wrap">
+                    <button class="py-2 px-5 lg:py-3 lg:px-7 text-white bg-orange-500 rounded text-md lg:text-lg font-semibold"><span class="flex"><img
+                                src="./images/download-icon.svg" alt=""><span
+                                class="pl-2 ">Download CV</span></span>
+                    </button>
+                    <button
+                        class="ml-4 sm:ml-8 py-2 px-5 lg:py-3 lg:px-7 text-white bg-orange-500 rounded text-md lg:text-lg font-semibold"> Contact</button>
+                </div>
+            </div>
+            <div class="profile-img"> <img class="banner-img" src="images/hardy.png" alt=""></div>
+        </div>
+    </header>
+
+
+    <script src="./Js/toggle-menu.js"></script>
 </body>
+
 </html>
